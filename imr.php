@@ -576,8 +576,8 @@ function GetPlatform()
 
 function GetChatCode()
 {
-	if(GetUserAgent() == "1.23") return "�";
-    else return utf8_encode("�");
+	if(GetUserAgent() == "1.23") return "»";
+    else return utf8_encode("»");
 }
 
 function GetPlayerIP()
