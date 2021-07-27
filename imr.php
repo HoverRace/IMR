@@ -319,10 +319,6 @@ function ADD_CHAT($db, $CMD) {
     		// TELL THEM THE PLAYER DOESN'T EXIST
     		ChatMessage(0,ChatDate() . "IMR","User ID $contentsmessage[0] does not exist.",$addchatid[0]);
 		}
-	} elseif (substr(urldecode($CMD[2]),0,4)=="/rec") {
-		// VIEWING RECORDS FOR HOSTED TRACK
-		///////////////////////////////////
-		include "command-rec.php";
 	// CODE FOR A STATUS CHANGE
 	} elseif (substr(urldecode($CMD[2]),0,7)=="/status") {
 		// LET A PLAYER CHANGE HIS STATUS
@@ -580,8 +576,8 @@ function GetPlatform()
 
 function GetChatCode()
 {
-	if(GetUserAgent() == "1.23") return "»";
-    else return utf8_encode("»");
+	if(GetUserAgent() == "1.23") return "ï¿½";
+    else return utf8_encode("ï¿½");
 }
 
 function GetPlayerIP()
